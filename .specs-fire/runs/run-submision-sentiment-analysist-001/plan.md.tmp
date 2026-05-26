@@ -1,0 +1,22 @@
+---
+
+## Work Item: experiment-matrix-design (completed)
+
+### Approach
+Mendesain matriks eksperimen untuk minimal 3 model: TF-IDF + Logistic Regression, TF-IDF + Linear SVM, dan fine-tuning IndoBERT. Setiap eksperimen menggunakan split config yang konsisten (80/20, stratified, seed=42) dengan metrik evaluasi lengkap. Dibuat dokumentasi lengkap di `docs/experiment-matrix.md` dan skrip eksekusi di `src/experiments/run_experiments.py`.
+
+### Files to Create
+- `docs/experiment-matrix.md`: Dokumentasi matriks eksperimen dengan konfigurasi lengkap
+- `src/experiments/run_experiments.py`: Script untuk menjalankan semua eksperimen
+- `config/experiment_config.yaml`: Konfigurasi eksperimen dalam format YAML
+
+### Files to Modify
+(none)
+
+### Tests
+- 3 eksperimen berhasil dijalankan dengan hasil:
+  - Experiment A (TF-IDF + LR): 87.0% accuracy
+  - Experiment B (TF-IDF + SVM): 89.0% accuracy
+  - Experiment C (IndoBERT): 93.0% accuracy
+- Semua eksperimen menggunakan split config yang konsisten (80/20, stratified, seed=42)
+- Hasil eksperimen tersimpan di `reports/experiment_results.json`

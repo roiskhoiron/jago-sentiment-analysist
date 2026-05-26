@@ -1,0 +1,173 @@
+project:
+  name: Sentiment Analysis Pipeline for Indonesian User Reviews
+  desc: Sentiment analysis system using self-scraped Indonesian mobile banking app
+    reviews with reproducible ML/DL experiments
+  created: 2026-05-26T04:30:35Z
+  fire_version: 0.1.8
+workspace:
+  type: greenfield
+  structure: monolith
+  autonomy_bias: balanced
+  run_scope_preference: single
+  run_scope_history: []
+intents:
+  - id: sentiment-analisis-ulasan-bank-indonesia
+    title: Sentiment Analysis Pipeline Ulasan Bank Indonesia (Google Play)
+    status: in_progress
+    work_items:
+      - id: project-scope-alignment
+        status: pending
+        complexity: low
+        mode: autopilot
+      - id: constraint-validation
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - project-scope-alignment
+      - id: dataset-strategy-validation
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - constraint-validation
+      - id: labeling-strategy-design
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - dataset-strategy-validation
+      - id: project-structure-proposal
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - labeling-strategy-design
+      - id: ml-pipeline-architecture
+        status: pending
+        complexity: medium
+        mode: confirm
+        depends_on:
+          - project-structure-proposal
+      - id: experiment-matrix-design
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - ml-pipeline-architecture
+      - id: evaluation-protocol-definition
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - experiment-matrix-design
+      - id: reproducibility-policy
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - evaluation-protocol-definition
+      - id: execution-roadmap-design
+        status: pending
+        complexity: medium
+        mode: confirm
+        depends_on:
+          - reproducibility-policy
+      - id: submission-packaging-validation
+        status: pending
+        complexity: low
+        mode: autopilot
+        depends_on:
+          - execution-roadmap-design
+runs:
+  active:
+    - id: run-submision-sentiment-analysist-001
+      scope: wide
+      work_items:
+        - id: project-scope-alignment
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: approved
+          current_checkpoint: plan
+          completed_at: 2026-05-26T07:28:09.943Z
+        - id: constraint-validation
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: none
+          current_checkpoint: null
+          completed_at: 2026-05-26T07:33:19.253Z
+        - id: dataset-strategy-validation
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: none
+          current_checkpoint: null
+          completed_at: 2026-05-26T07:36:12.179Z
+        - id: labeling-strategy-design
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: none
+          current_checkpoint: null
+          completed_at: 2026-05-26T07:37:23.409Z
+        - id: project-structure-proposal
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: approved
+          current_checkpoint: plan
+          completed_at: 2026-05-26T07:56:47.797Z
+        - id: ml-pipeline-architecture
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: confirm
+          status: completed
+          current_phase: review
+          checkpoint_state: approved
+          current_checkpoint: plan
+          completed_at: 2026-05-26T09:24:02.841Z
+        - id: experiment-matrix-design
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: completed
+          current_phase: review
+          checkpoint_state: none
+          current_checkpoint: null
+          completed_at: 2026-05-26T10:07:29.984Z
+        - id: evaluation-protocol-definition
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: in_progress
+          current_phase: execute
+          checkpoint_state: none
+          current_checkpoint: null
+        - id: reproducibility-policy
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: pending
+          current_phase: null
+          checkpoint_state: none
+          current_checkpoint: null
+        - id: execution-roadmap-design
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: confirm
+          status: pending
+          current_phase: null
+          checkpoint_state: none
+          current_checkpoint: null
+        - id: submission-packaging-validation
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: autopilot
+          status: pending
+          current_phase: null
+          checkpoint_state: none
+          current_checkpoint: null
+      current_item: evaluation-protocol-definition
+      started: 2026-05-26T05:33:08.564Z
+  completed: []
