@@ -16,161 +16,129 @@ intents:
     status: in_progress
     work_items:
       - id: project-scope-alignment
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: constraint-validation
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - project-scope-alignment
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: dataset-strategy-validation
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - constraint-validation
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: labeling-strategy-design
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - dataset-strategy-validation
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: project-structure-proposal
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - labeling-strategy-design
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: ml-pipeline-architecture
-        status: pending
+        status: completed
         complexity: medium
         mode: confirm
         depends_on:
           - project-structure-proposal
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: experiment-matrix-design
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - ml-pipeline-architecture
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: evaluation-protocol-definition
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - experiment-matrix-design
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: reproducibility-policy
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - evaluation-protocol-definition
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: execution-roadmap-design
-        status: pending
+        status: completed
         complexity: medium
         mode: confirm
         depends_on:
           - reproducibility-policy
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
       - id: submission-packaging-validation
-        status: pending
+        status: completed
         complexity: low
         mode: autopilot
         depends_on:
           - execution-roadmap-design
+        run_id: run-submision-sentiment-analysist-001
+        completed_at: 2026-05-26T17:50:41.538Z
 runs:
-  active:
+  active: []
+  completed:
     - id: run-submision-sentiment-analysist-001
       scope: wide
       work_items:
         - id: project-scope-alignment
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: approved
-          current_checkpoint: plan
-          completed_at: 2026-05-26T07:28:09.943Z
         - id: constraint-validation
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T07:33:19.253Z
         - id: dataset-strategy-validation
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T07:36:12.179Z
         - id: labeling-strategy-design
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T07:37:23.409Z
         - id: project-structure-proposal
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: approved
-          current_checkpoint: plan
-          completed_at: 2026-05-26T07:56:47.797Z
         - id: ml-pipeline-architecture
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: confirm
-          status: completed
-          current_phase: review
-          checkpoint_state: approved
-          current_checkpoint: plan
-          completed_at: 2026-05-26T09:24:02.841Z
         - id: experiment-matrix-design
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T10:07:29.984Z
         - id: evaluation-protocol-definition
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T10:20:54.078Z
         - id: reproducibility-policy
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: completed
-          current_phase: review
-          checkpoint_state: none
-          current_checkpoint: null
-          completed_at: 2026-05-26T17:30:49.525Z
         - id: execution-roadmap-design
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: confirm
-          status: completed
-          current_phase: review
-          checkpoint_state: approved
-          current_checkpoint: plan
-          completed_at: 2026-05-26T17:46:19.427Z
         - id: submission-packaging-validation
           intent: sentiment-analisis-ulasan-bank-indonesia
           mode: autopilot
-          status: in_progress
-          current_phase: plan
-          checkpoint_state: none
-          current_checkpoint: null
-      current_item: submission-packaging-validation
       started: 2026-05-26T05:33:08.564Z
-  completed: []
+      completed: 2026-05-26T17:50:41.538Z

@@ -172,6 +172,22 @@ Menyusun roadmap pengerjaan teknis untuk fase Builder, mengurutkan task dari scr
 - Validasi dokumen roadmap ada dan mencakup semua fase utama.
 - Verifikasi estimasi checkpoint terdefinisi dengan jelas.
 
+## Work Item: submission-packaging-validation
+
+### Approach
+Validasi akhir struktur pengumpulan (packaging) untuk memastikan semua file wajib (3 notebook, dataset, requirements, README) tersedia. Membuat checklist kelengkapan dan verifikasi format output inference.
+
+### Files to Create
+- `docs/submission-checkist.md`: Checklist kelengkapan berkas submission
+- `submission/` folder structure
+
+### Files to Modify
+- (none)
+
+### Tests
+- Validasi checklist kelengkapan tersedia.
+- Verifikasi format output inference kategorikal.
+
 ---
 
 ### Approach
