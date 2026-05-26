@@ -61,25 +61,25 @@ work_items:
   - id: reproducibility-policy
     intent: sentiment-analisis-ulasan-bank-indonesia
     mode: autopilot
-    status: in_progress
-    current_phase: plan
+    status: completed
+    current_phase: review
     checkpoint_state: none
     current_checkpoint: null
   - id: execution-roadmap-design
     intent: sentiment-analisis-ulasan-bank-indonesia
     mode: confirm
-    status: pending
-    current_phase: null
-    checkpoint_state: none
-    current_checkpoint: null
+    status: completed
+    current_phase: review
+    checkpoint_state: approved
+    current_checkpoint: plan
   - id: submission-packaging-validation
     intent: sentiment-analisis-ulasan-bank-indonesia
     mode: autopilot
-    status: pending
-    current_phase: null
+    status: in_progress
+    current_phase: plan
     checkpoint_state: none
     current_checkpoint: null
-current_item: reproducibility-policy
+current_item: submission-packaging-validation
 status: in_progress
 started: 2026-05-26T05:33:08.564Z
 completed: null
@@ -99,13 +99,13 @@ wide (11 work items)
 6. **ml-pipeline-architecture** (confirm) — completed
 7. **experiment-matrix-design** (autopilot) — completed
 8. **evaluation-protocol-definition** (autopilot) — completed
-9. **reproducibility-policy** (autopilot) — in_progress
-10. **execution-roadmap-design** (confirm) — pending
-11. **submission-packaging-validation** (autopilot) — pending
+9. **reproducibility-policy** (autopilot) — completed
+10. **execution-roadmap-design** (confirm) — completed
+11. **submission-packaging-validation** (autopilot) — in_progress
 
 
 ## Current Item
-reproducibility-policy (autopilot)
+submission-packaging-validation (autopilot)
 
 ## Files Created
 (none yet)

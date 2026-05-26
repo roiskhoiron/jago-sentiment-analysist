@@ -4,8 +4,9 @@ title: Submission Packaging Validation
 intent: sentiment-analisis-ulasan-bank-indonesia
 complexity: low
 mode: autopilot
-status: pending
-depends_on: [execution-roadmap-design]
+status: in_progress
+depends_on:
+  - execution-roadmap-design
 created: 2026-05-26T04:47:29Z
 ---
 

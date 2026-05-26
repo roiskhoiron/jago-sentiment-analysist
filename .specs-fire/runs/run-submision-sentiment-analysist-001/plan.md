@@ -157,6 +157,23 @@ Menetapkan aturan reproduksibilitas untuk semua eksperimen: fixed random seed (4
 
 ---
 
+## Work Item: execution-roadmap-design
+
+### Approach
+Menyusun roadmap pengerjaan teknis untuk fase Builder, mengurutkan task dari scraping hingga inference demo. Termasuk penjadwalan, estimasi checkpoint, dan alokasi sumber daya.
+
+### Files to Create
+- `docs/execution-roadmap.md`: Dokumentasi roadmap teknis lengkap dengan timeline, milestones, dan checkpoint.
+
+### Files to Modify
+- (none)
+
+### Tests
+- Validasi dokumen roadmap ada dan mencakup semua fase utama.
+- Verifikasi estimasi checkpoint terdefinisi dengan jelas.
+
+---
+
 ### Approach
 Memvalidasi semua batasan keras proyek: (1) larangan dataset publik — scraping mandiri dari Google Play Store, (2) kewajiban scraping sendiri menggunakan tools seperti Scrapy/BeautifulSoup, (3) ambang batas akurasi minimal 85% untuk model final, (4) batasan resource komputasi, (5) etika pengambilan data.
 
