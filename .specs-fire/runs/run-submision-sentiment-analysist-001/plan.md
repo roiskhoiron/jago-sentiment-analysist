@@ -139,6 +139,24 @@ Menetapkan protokol evaluasi standar untuk semua eksperimen sentiment analysis. 
 
 ---
 
+## Work Item: reproducibility-policy
+
+### Approach
+Menetapkan aturan reproduksibilitas untuk semua eksperimen: fixed random seed (42), penyimpanan artifact (model .joblib/.bin, vectorizer/tokenizer, preprocessing config), dan penguncian dependency melalui requirements.txt. Semua notebook harus berjalan sequential tanpa modifikasi manual.
+
+### Files to Create
+- `docs/reproducibility-policy.md`: Dokumentasi aturan reproduksibilitas dan daftar artifact
+- `requirements.txt`: Dependency yang terkunci untuk reproduksibilitas
+
+### Files to Modify
+- (none)
+
+### Tests
+- Validasi requirements.txt tersedia dan berisi dependency utama.
+- Verifikasi dokumentasi mencakup daftar artifact yang wajib disimpan.
+
+---
+
 ### Approach
 Memvalidasi semua batasan keras proyek: (1) larangan dataset publik — scraping mandiri dari Google Play Store, (2) kewajiban scraping sendiri menggunakan tools seperti Scrapy/BeautifulSoup, (3) ambang batas akurasi minimal 85% untuk model final, (4) batasan resource komputasi, (5) etika pengambilan data.
 

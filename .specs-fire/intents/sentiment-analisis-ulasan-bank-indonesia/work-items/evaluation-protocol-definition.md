@@ -4,10 +4,12 @@ title: Evaluation Protocol Definition
 intent: sentiment-analisis-ulasan-bank-indonesia
 complexity: low
 mode: autopilot
-status: in_progress
+status: completed
 depends_on:
   - experiment-matrix-design
 created: 2026-05-26T04:47:29Z
+run_id: run-submision-sentiment-analysist-001
+completed_at: 2026-05-26T10:20:54.078Z
 ---
 
 # Work Item: Evaluation Protocol Definition

@@ -83,3 +83,18 @@
 - `docs/experiment-matrix.md`: Contains configuration table with 5 experiments, feature extraction combinations, model selection criteria, preprocessing pipeline, and reproducibility notes.
 - `docs/experiment-config.yaml`: Machine-readable YAML config for all 5 experiments with targets (accuracy_testing, f1_macro), vectorizer settings, and split configs.
 - `scripts/test_experiment_matrix.py`: Validation script — 5 tests all passing.
+
+---
+
+## Work Item: evaluation-protocol-definition
+
+### Test Results
+- **Status**: PASSED
+
+### Acceptance Criteria Validation
+- [x] Protokol evaluasi standar ditetapkan (`docs/evaluation-protocol.md` created)
+- [x] Target akurasi testing >= 85% divalidasi (Section 2 — Primary Metric)
+
+### Files Verified
+- `docs/evaluation-protocol.md`: Complete evaluation protocol covering train/test split, evaluation metrics, overfitting detection, label encoding, reporting format, cross-validation, and artifact storage.
+- `scripts/evaluate.py`: Evaluation module for computing metrics including accuracy, precision, recall, F1 per class and macro, plus target validation.

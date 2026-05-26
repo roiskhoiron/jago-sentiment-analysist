@@ -54,15 +54,15 @@ work_items:
   - id: evaluation-protocol-definition
     intent: sentiment-analisis-ulasan-bank-indonesia
     mode: autopilot
-    status: in_progress
-    current_phase: plan
+    status: completed
+    current_phase: review
     checkpoint_state: none
     current_checkpoint: null
   - id: reproducibility-policy
     intent: sentiment-analisis-ulasan-bank-indonesia
     mode: autopilot
-    status: pending
-    current_phase: null
+    status: in_progress
+    current_phase: plan
     checkpoint_state: none
     current_checkpoint: null
   - id: execution-roadmap-design
@@ -79,7 +79,7 @@ work_items:
     current_phase: null
     checkpoint_state: none
     current_checkpoint: null
-current_item: evaluation-protocol-definition
+current_item: reproducibility-policy
 status: in_progress
 started: 2026-05-26T05:33:08.564Z
 completed: null
@@ -98,14 +98,14 @@ wide (11 work items)
 5. **project-structure-proposal** (autopilot) — completed
 6. **ml-pipeline-architecture** (confirm) — completed
 7. **experiment-matrix-design** (autopilot) — completed
-8. **evaluation-protocol-definition** (autopilot) — in_progress
-9. **reproducibility-policy** (autopilot) — pending
+8. **evaluation-protocol-definition** (autopilot) — completed
+9. **reproducibility-policy** (autopilot) — in_progress
 10. **execution-roadmap-design** (confirm) — pending
 11. **submission-packaging-validation** (autopilot) — pending
 
 
 ## Current Item
-evaluation-protocol-definition (autopilot)
+reproducibility-policy (autopilot)
 
 ## Files Created
 (none yet)
