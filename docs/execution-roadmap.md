@@ -61,3 +61,22 @@ Roadmap teknis untuk implementasi Sentiment Analysis Pipeline dari scraping hing
 | Evaluation reports | `reports/exp-{id}/metrics.json` | JSON |
 | Inference script | `src/inference.py` | Python |
 | Submission package | `submission/` | Folder |
+
+## >92% Accuracy Strategy
+
+Target akurasi >92% memerlukan pendekatan khusus melampaui baseline 85%:
+
+| Approach | Method | Expected Gain | Applied To |
+|----------|--------|---------------|------------|
+| **Transformer fine-tuning** | IndoBERT with learning rate scheduling, warmup, and early stopping | +5-8% over baseline | EXP-03 |
+| **Hyperparameter optimization** | Grid search on SVM C/gamma and LR regularization | +2-3% over default | EXP-02, EXP-05 |
+| **Feature engineering** | Trigram TF-IDF + stemming (Sastrawi) | +1-2% over bigram | EXP-05 |
+| **Ensemble** | Soft voting (LR + SVM + IndoBERT) | +1-3% over single model | Post-EXP comparison |
+| **Data augmentation** | Back-translation or synonym replacement for minority classes | +1-2% F1 on neutral | If class imbalance >2:1 |
+
+**Execution order for >92%:**
+1. Train LR baseline (EXP-01) → validate reachable accuracy
+2. Train SVM with grid search (EXP-02, EXP-05) → select best SVM variant
+3. Fine-tune IndoBERT (EXP-03) → if >=92%, select as final
+4. If <92%: build ensemble (LR + SVM + IndoBERT soft voting)
+5. If still <92%: apply data augmentation for neutral class, re-train ensemble

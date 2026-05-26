@@ -13,7 +13,7 @@ workspace:
 intents:
   - id: sentiment-analisis-ulasan-bank-indonesia
     title: Sentiment Analysis Pipeline Ulasan Bank Indonesia (Google Play)
-    status: in_progress
+    status: completed
     work_items:
       - id: project-scope-alignment
         status: completed
@@ -101,6 +101,21 @@ intents:
           - execution-roadmap-design
         run_id: run-submision-sentiment-analysist-001
         completed_at: 2026-05-26T17:50:41.538Z
+      - id: constraint-validation-checklist
+        status: completed
+        complexity: low
+        mode: autopilot
+        depends_on: []
+        note: Merged into constraint-validation docs
+        completed_at: 2026-05-26T17:55:00Z
+      - id: implementation-roadmap-planning
+        status: completed
+        complexity: medium
+        mode: confirm
+        depends_on:
+          - constraint-validation-checklist
+        note: Merged into execution-roadmap-design (>92% strategy added)
+        completed_at: 2026-05-26T17:55:00Z
 runs:
   active: []
   completed:
