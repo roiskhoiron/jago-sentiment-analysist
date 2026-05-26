@@ -2,7 +2,7 @@ import csv
 import time
 from google_play_scraper import reviews_all, Sort
 
-APP_ID = "com.jago.android"
+APP_ID = "com.jago.digitalBanking"
 OUTPUT_FILE = "data/raw/reviews.csv"
 TARGET_COUNT = 10000
 LANG = "id"
