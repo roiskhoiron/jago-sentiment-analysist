@@ -99,6 +99,6 @@ config/
 opencode/
 specs-fire/
 specsmd/
-.opencode
-.specs-fire
-.specsmd
+.opencode/
+.specs-fire/
+.specsmd/
