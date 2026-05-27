@@ -192,12 +192,112 @@
       "feature_extraction": "TF-IDF (1-3 gram, max_features=15000)",
       "accuracy": 0.8866,
       "timestamp": "2026-05-27T01:13:00.515206"
+    },
+    {
+      "experiment": "EXP-05_IndoBERT",
+      "model": "indobenchmark/indobert-base-p1",
+      "metrics": {
+        "accuracy_test": 0.9028,
+        "f1_macro": 0.7872,
+        "per_class": {
+          "Negative": {
+            "precision": 0.8406,
+            "recall": 0.8705,
+            "f1": 0.8553
+          },
+          "Neutral": {
+            "precision": 0.5963,
+            "recall": 0.52,
+            "f1": 0.5556
+          },
+          "Positive": {
+            "precision": 0.9517,
+            "recall": 0.9496,
+            "f1": 0.9506
+          }
+        },
+        "confusion_matrix": [
+          [
+            464,
+            28,
+            41
+          ],
+          [
+            34,
+            65,
+            26
+          ],
+          [
+            54,
+            16,
+            1319
+          ]
+        ]
+      },
+      "training_config": {
+        "epochs": 3,
+        "batch_size": 8,
+        "learning_rate": 2e-05,
+        "max_length": 64,
+        "oversampled_neutral": true
+      },
+      "timestamp": "2026-05-27T02:13:31.432557"
+    },
+    {
+      "experiment": "EXP-06_IndoBERT_Tuned",
+      "model": "indobenchmark/indobert-base-p1 (tuned)",
+      "metrics": {
+        "accuracy_test": 0.9072,
+        "f1_macro": 0.8191,
+        "per_class": {
+          "Negative": {
+            "precision": 0.8529,
+            "recall": 0.8593,
+            "f1": 0.8561
+          },
+          "Neutral": {
+            "precision": 0.6842,
+            "recall": 0.624,
+            "f1": 0.6527
+          },
+          "Positive": {
+            "precision": 0.9463,
+            "recall": 0.951,
+            "f1": 0.9487
+          }
+        },
+        "confusion_matrix": [
+          [
+            458,
+            25,
+            50
+          ],
+          [
+            22,
+            78,
+            25
+          ],
+          [
+            57,
+            11,
+            1321
+          ]
+        ]
+      },
+      "training_config": {
+        "base_model": "models/EXP-05_IndoBERT",
+        "extra_epochs": 2,
+        "learning_rate": 1e-05,
+        "max_length": 96
+      },
+      "timestamp": "2026-05-27T06:34:03.938675"
     }
   ],
   "summary": {
-    "total": 4,
-    "best_accuracy": 0.8886,
+    "total": 6,
+    "best_accuracy": 0.9072,
     "best_f1": 0.6416,
-    "timestamp": "2026-05-27T01:12:29.885220"
+    "timestamp": "2026-05-27T01:12:29.885220",
+    "best_model": "EXP-06 (90.72%)"
   }
 }

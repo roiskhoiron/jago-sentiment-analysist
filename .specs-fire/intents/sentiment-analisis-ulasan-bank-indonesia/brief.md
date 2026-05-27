@@ -3,7 +3,7 @@ id: sentiment-analisis-ulasan-bank-indonesia
 title: Sentiment Analysis Pipeline Ulasan Bank Indonesia (Google Play)
 status: completed
 created: 2026-05-26T04:47:29Z
-completed_at: 2026-05-26T17:50:41.556Z
+completed_at: 2026-05-26T19:14:02.629Z
 ---
 
 # Intent: Sentiment Analysis Pipeline Ulasan Bank Jago Digital Banking Indonesia (Google Play)

@@ -116,6 +116,24 @@ intents:
           - constraint-validation-checklist
         note: Merged into execution-roadmap-design (>92% strategy added)
         completed_at: 2026-05-26T17:55:00Z
+      - id: deep-learning-indobert
+        status: completed
+        complexity: medium
+        mode: confirm
+        depends_on:
+          - experiment-matrix-design
+        title: Fine-tuning IndoBERT for >92% accuracy
+        run_id: run-submision-sentiment-analysist-002
+        completed_at: 2026-05-26T19:14:02.622Z
+      - id: deep-learning-indobert-tuning
+        status: completed
+        complexity: medium
+        mode: confirm
+        depends_on:
+          - deep-learning-indobert
+        title: Hyperparameter tuning IndoBERT >92%
+        run_id: run-submision-sentiment-analysist-003
+        completed_at: 2026-05-26T23:34:18.924Z
 runs:
   active: []
   completed:
@@ -157,3 +175,19 @@ runs:
           mode: autopilot
       started: 2026-05-26T05:33:08.564Z
       completed: 2026-05-26T17:50:41.538Z
+    - id: run-submision-sentiment-analysist-002
+      scope: single
+      work_items:
+        - id: deep-learning-indobert
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: confirm
+      started: 2026-05-26T18:19:20.904Z
+      completed: 2026-05-26T19:14:02.622Z
+    - id: run-submision-sentiment-analysist-003
+      scope: single
+      work_items:
+        - id: deep-learning-indobert-tuning
+          intent: sentiment-analisis-ulasan-bank-indonesia
+          mode: confirm
+      started: 2026-05-26T22:56:28.821Z
+      completed: 2026-05-26T23:34:18.924Z
