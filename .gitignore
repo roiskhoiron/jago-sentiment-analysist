@@ -68,10 +68,6 @@ venv.bak/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Data
-data/
-!data/.gitkeep
-
 # Models (large binary artifacts - use for storage)
 models/
 !models/.gitkeep
