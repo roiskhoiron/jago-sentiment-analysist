@@ -57,8 +57,9 @@ df = df[df["clean"].str.len() > 0].reset_index(drop=True)
 print(f"After cleaning: {len(df)} samples")
 
 # ── 4. Train/Test Split ──
-X = df["clean"].values
-y = df["label"].values
+import numpy as np
+X = np.array(df["clean"].values)
+y = np.array(df["label"].values).astype(int)
 
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, stratify=y, random_state=SEED, shuffle=True
