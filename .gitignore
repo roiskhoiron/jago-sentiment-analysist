@@ -72,11 +72,11 @@ venv.bak/
 data/
 !data/.gitkeep
 
-# Models
+# Models (large binary artifacts - use for storage)
 models/
 !models/.gitkeep
 
-# Reports
+# Reports (large JSON/text)
 reports/
 !reports/.gitkeep
 
