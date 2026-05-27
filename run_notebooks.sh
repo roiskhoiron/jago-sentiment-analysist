@@ -19,17 +19,17 @@ pip install -q jupyter nbconvert 2>/dev/null || true
 
 echo ""
 echo "[1/3] Menjalankan 01_scraping.ipynb..."
-jupyter nbconvert --to notebook --execute notebooks/01_scraping.ipynb --output exec_01.ipynb
+jupyter nbconvert --to notebook --execute notebooks/01_scraping.ipynb --output 01_scraping.ipynb
 echo "  -> exec_01.ipynb selesai"
 
 echo ""
 echo "[2/3] Menjalankan 02_training.ipynb..."
-jupyter nbconvert --to notebook --execute notebooks/02_training.ipynb --output exec_02.ipynb
+jupyter nbconvert --to notebook --execute notebooks/02_training.ipynb --output 02_training.ipynb
 echo "  -> exec_02.ipynb selesai"
 
 echo ""
 echo "[3/3] Menjalankan 03_inference.ipynb..."
-jupyter nbconvert --to notebook --execute notebooks/03_inference.ipynb --output exec_03.ipynb
+jupyter nbconvert --to notebook --execute notebooks/03_inference.ipynb --output 03_inference.ipynb
 echo "  -> exec_03.ipynb selesai"
 
 echo ""
