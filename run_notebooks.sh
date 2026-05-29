@@ -54,10 +54,39 @@ echo " Semua notebook selesai!"
 echo " Hasil: exec_0{1,2,3}.ipynb"
 echo "========================================"
 
+# Git setup untuk Colab (PAT-based, non-interaktif)
+if [ ! -d ".git" ]; then
+    echo "[0.5/3] Menginisialisasi git repo..."
+    git init
+fi
+
+git config user.name "${GIT_USER_NAME:-Colab User}"
+git config user.email "${GIT_USER_EMAIL:-colab@user.com}"
+
+# Bangun URL dengan PAT jika tersedia
+if [ -n "${GIT_PAT:-}" ]; then
+    REMOTE_URL="https://${GIT_PAT}@github.com/roiskhoiron/jago-sentiment-analysist.git"
+else
+    REMOTE_URL="${GIT_REPO_URL:-https://github.com/roiskhoiron/jago-sentiment-analysist.git}"
+fi
+
+# Set remote origin jika belum ada
+if ! git remote | grep -q "^origin$"; then
+    echo "[0.5/3] Menambahkan remote origin..."
+    git remote add origin "$REMOTE_URL"
+else
+    git remote set-url origin "$REMOTE_URL"
+fi
+
 echo "Finalizing... Git add all generated file and changes to push to GitHub"
 git add .
-git commit -m "Update generated notebooks and results"
-git push origin master
+
+# Skip commit jika tidak ada perubahan (file belum berubah)
+if ! git diff --cached --quiet; then
+    git commit -m "Update generated notebooks and results"
+fi
+
+git push origin master 2>/dev/null || git push -u origin master
 
 echo "Done!"
 echo "========================================"
