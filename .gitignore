@@ -91,10 +91,3 @@ config/
 # Temporary files
 *.tmp
 *.temp
-
-opencode/
-specs-fire/
-specsmd/
-.opencode/
-.specs-fire/
-.specsmd/
